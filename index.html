@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/src/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="header-title">Find your film</h1>
+                <a href="/src/main.html" id="list" class="header-link">My Watchlist</a>
+            </div>
+        </header>
+        <div class="search">
+            <img class="search-img" src="/images/Search.svg" />
+            <input id="search-input" class="search-input" type="text" placeholder="Blade Runner" />
+            <button id="btn-main" type="submit" class="search-btn">Search</button>
+        </div>
+        <main class="main">
+            <div id="movies" class="movie">
+                <div id="start" class="start">
+                <img class="start-img" src="/images/Icon4.png" alt="movie" />
+                <p class="start-text">Start exploring</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/src/index.js"></script>
+</body>
+</html>
