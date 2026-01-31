@@ -1,7 +1,8 @@
-// watchlist.js
+console.log("main.js загружен");
+
 function renderWatchlist() {
   const films = document.getElementById("films");
-  watchlist = JSON.parse(localStorage.getItem("watchlist"));
+  let watchlist = JSON.parse(localStorage.getItem("watchlist"));
   if (!watchlist || watchlist.length === 0) {
     films.innerHTML = `
     <div class="films-block">
@@ -46,5 +47,4 @@ function removeFromWatchlist(movieId) {
   renderWatchlist(); // Перерисовываем список после удаления
 }
 
-// Запускаем при загрузке страницы
 document.addEventListener("DOMContentLoaded", renderWatchlist);
