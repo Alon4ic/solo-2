@@ -1,4 +1,3 @@
-console.log("main.js загружен");
 
 function renderWatchlist() {
   const films = document.getElementById("films");
@@ -44,7 +43,7 @@ function removeFromWatchlist(movieId) {
   let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
   watchlist = watchlist.filter((movie) => movie.imdbID !== movieId);
   localStorage.setItem("watchlist", JSON.stringify(watchlist));
-  renderWatchlist(); // Перерисовываем список после удаления
+  renderWatchlist(); 
 }
 
 document.addEventListener("DOMContentLoaded", renderWatchlist);

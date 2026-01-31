@@ -4,8 +4,6 @@ const searchInput = document.getElementById("search-input");
 const block = document.getElementById("block");
 const movies = document.getElementById("movies");
 const list = document.getElementById("list");
-console.log(apikey);
-console.log(import.meta.env.VITE_OMDB_API_KEY);
 
 async function searchMovies() {
   const query = searchInput.value.trim();
