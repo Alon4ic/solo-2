@@ -6,7 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, "index.html"),
-        main: resolve(__dirname, "watchlist.html"),
+        main: resolve(__dirname, "main.html"),
       },
     },
   },
